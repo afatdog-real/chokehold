@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="MIT"
+[[mods]]
+modId="chokehold"
+version="${mod_version}"
+displayName="Chokehold / Restrain Duel"
+authors="${mod_authors}"
+description='''
+Adds a player-vs-player chokehold/restrain mechanic with a timing-based duel wheel.
+Right-click another player while sneaking with an empty hand to begin a duel.
+While restrained, the player must compete in a wheel-press minigame to escape
+or risk fainting. Voice and text chat are blocked for the restrained player.
+Optional integration with Simple Voice Chat.
+'''
+[[dependencies.chokehold]]
+    modId="forge"
+    mandatory=true
+    versionRange="${neoforge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.chokehold]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.chokehold]]
+    modId="voicechat"
+    mandatory=false
+    versionRange="[2.4.0,)"
+    ordering="AFTER"
+    side="BOTH"
