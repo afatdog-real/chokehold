@@ -101,5 +101,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
-
-*Built with NeoForge for Minecraft 1.20.1+*
