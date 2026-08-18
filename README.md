@@ -1,11 +1,9 @@
-# Chokehold / Restrain Duel Mod
+# Chokehold Mod
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.20.1%2B-green)
-![NeoForge](https://img.shields.io/badge/NeoForge-1.20.1%2B-orange)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
 
-A NeoForge 1.20.1+ mod that adds a player-vs-player chokehold / restrain mechanic with a timing-based duel minigame.
+A mod that adds a player-vs-player chokehold / restrain mechanic with a timing-based duel minigame.
 
 ## 🎮 Concept
 
@@ -15,44 +13,6 @@ A NeoForge 1.20.1+ mod that adds a player-vs-player chokehold / restrain mechani
   - The restricted player with the higher wheel value wins the round.
   - Repeatedly winning rounds builds a streak; reaching the streak threshold lets the restrained player escape.
 - If the restrained player's air reaches 0, they enter **FaintedState** — they lie down, can't move/attack, are chat-muted (and voice-muted if Simple Voice Chat is installed), and get a modal **"YOU ARE K.O."** screen with a rescue countdown. Their health is set to half a heart and stays there, and they take full damage — anyone can finish them off while they're down.
-
-## 📥 Installation
-
-1. Install [NeoForge](https://neoforged.net/) for Minecraft 1.20.1+
-2. Download the latest `chokehold-1.0.0.jar` from [Releases](https://github.com/yourusername/chokehold/releases)
-3. Place it in your `mods` folder
-4. Launch Minecraft with the NeoForge profile
-
-## 🔨 Building from Source
-
-This project ships as a standard NeoForge Gradle project. To build:
-
-```bash
-# Windows
-gradlew build
-
-# Linux / macOS
-./gradlew build
-```
-
-The output jar lands in `build/libs/chokehold-1.0.0.jar`.
-
-### Requirements
-
-- JDK 17 (for 1.20.1)
-- Internet access on first build (Gradle downloads NeoForge artifacts)
-
-## 🏃 Running in Development
-
-```bash
-# Launches the Minecraft client with the mod loaded
-gradlew runClient
-
-# Launches a dedicated server (single-process)
-gradlew runServer
-```
-
-The `run/` directory is the working directory for both; configs and worlds go there.
 
 ## ⚙️ Configuration
 
