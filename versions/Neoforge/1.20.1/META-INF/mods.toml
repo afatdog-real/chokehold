@@ -4,7 +4,7 @@ license="MIT"
 [[mods]]
 modId="chokehold"
 version="${mod_version}"
-displayName="Chokehold / Restrain Duel"
+displayName="Chokehold"
 authors="${mod_authors}"
 description='''
 Adds a player-vs-player chokehold/restrain mechanic with a timing-based duel wheel.
